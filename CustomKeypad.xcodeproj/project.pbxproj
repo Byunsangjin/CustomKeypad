@@ -15,6 +15,7 @@
 		BAD46C8F22D47A4500898432 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD46C8E22D47A4500898432 /* main.m */; };
 		BAD46C9922D47A4500898432 /* CustomKeypadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD46C9822D47A4500898432 /* CustomKeypadTests.m */; };
 		BAD46CA422D47A4500898432 /* CustomKeypadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD46CA322D47A4500898432 /* CustomKeypadUITests.m */; };
+		BAD46CBC22D48A6700898432 /* KeypadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD46CBB22D48A6700898432 /* KeypadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		BAD46C9F22D47A4500898432 /* CustomKeypadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomKeypadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD46CA322D47A4500898432 /* CustomKeypadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomKeypadUITests.m; sourceTree = "<group>"; };
 		BAD46CA522D47A4500898432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD46CBA22D48A6700898432 /* KeypadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeypadViewController.h; sourceTree = "<group>"; };
+		BAD46CBB22D48A6700898432 /* KeypadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeypadViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +104,9 @@
 		BAD46C7E22D47A4500898432 /* CustomKeypad */ = {
 			isa = PBXGroup;
 			children = (
-				BAD46C7F22D47A4500898432 /* AppDelegate.h */,
-				BAD46C8022D47A4500898432 /* AppDelegate.m */,
-				BAD46C8222D47A4500898432 /* ViewController.h */,
-				BAD46C8322D47A4500898432 /* ViewController.m */,
-				BAD46C8522D47A4500898432 /* Main.storyboard */,
-				BAD46C8822D47A4500898432 /* Assets.xcassets */,
-				BAD46C8A22D47A4500898432 /* LaunchScreen.storyboard */,
-				BAD46C8D22D47A4500898432 /* Info.plist */,
-				BAD46C8E22D47A4500898432 /* main.m */,
+				BAD46CB322D47CF400898432 /* Storyboards */,
+				BAD46CB222D47CF200898432 /* ViewControllers */,
+				BAD46CB122D47CF000898432 /* Supporting */,
 			);
 			path = CustomKeypad;
 			sourceTree = "<group>";
@@ -130,6 +127,38 @@
 				BAD46CA522D47A4500898432 /* Info.plist */,
 			);
 			path = CustomKeypadUITests;
+			sourceTree = "<group>";
+		};
+		BAD46CB122D47CF000898432 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				BAD46C7F22D47A4500898432 /* AppDelegate.h */,
+				BAD46C8022D47A4500898432 /* AppDelegate.m */,
+				BAD46C8822D47A4500898432 /* Assets.xcassets */,
+				BAD46C8D22D47A4500898432 /* Info.plist */,
+				BAD46C8E22D47A4500898432 /* main.m */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		BAD46CB222D47CF200898432 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BAD46C8222D47A4500898432 /* ViewController.h */,
+				BAD46C8322D47A4500898432 /* ViewController.m */,
+				BAD46CBA22D48A6700898432 /* KeypadViewController.h */,
+				BAD46CBB22D48A6700898432 /* KeypadViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BAD46CB322D47CF400898432 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BAD46C8522D47A4500898432 /* Main.storyboard */,
+				BAD46C8A22D47A4500898432 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +293,7 @@
 			files = (
 				BAD46C8422D47A4500898432 /* ViewController.m in Sources */,
 				BAD46C8F22D47A4500898432 /* main.m in Sources */,
+				BAD46CBC22D48A6700898432 /* KeypadViewController.m in Sources */,
 				BAD46C8122D47A4500898432 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,7 +467,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GN3PLAKW34;
-				INFOPLIST_FILE = CustomKeypad/Info.plist;
+				INFOPLIST_FILE = CustomKeypad/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GN3PLAKW34;
-				INFOPLIST_FILE = CustomKeypad/Info.plist;
+				INFOPLIST_FILE = CustomKeypad/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

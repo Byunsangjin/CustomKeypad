@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EJ8-DX-U5q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="MFl-n1-HPX">
+            <objects>
+                <viewController id="EJ8-DX-U5q" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cjq-f5-qch">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Input text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="h1X-tH-rzQ">
+                                <rect key="frame" x="30" y="50" width="315" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="est-DQ-iUV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaK-8Q-qxt">
+                                <rect key="frame" x="132" y="200" width="111" height="30"/>
+                                <state key="normal" title="keyboard toggle"/>
+                                <connections>
+                                    <action selector="toggleBtnTouched:" destination="EJ8-DX-U5q" eventType="touchUpInside" id="Jpd-5O-kK8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zaK-8Q-qxt" firstAttribute="centerX" secondItem="cjq-f5-qch" secondAttribute="centerX" id="IFl-8U-6It"/>
+                            <constraint firstItem="zaK-8Q-qxt" firstAttribute="top" secondItem="h1X-tH-rzQ" secondAttribute="bottom" constant="30" id="Mnq-R9-U6P"/>
+                            <constraint firstItem="h1X-tH-rzQ" firstAttribute="top" secondItem="gSl-DK-tUF" secondAttribute="top" constant="30" id="Uhe-M9-I5A"/>
+                            <constraint firstItem="h1X-tH-rzQ" firstAttribute="leading" secondItem="gSl-DK-tUF" secondAttribute="leading" constant="30" id="hii-qn-Nmc"/>
+                            <constraint firstItem="gSl-DK-tUF" firstAttribute="trailing" secondItem="h1X-tH-rzQ" secondAttribute="trailing" constant="30" id="qHK-ps-hbh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gSl-DK-tUF"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="h1X-tH-rzQ" id="WZn-8L-X9K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tYe-ux-g7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-780" y="38"/>
+        </scene>
+        <!--Keypad View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="KeypadViewController" id="BYZ-38-t0r" customClass="KeypadViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkM-c3-zMl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BNL-l4-qrF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zcO-qF-UDf">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHF-Gh-rqk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="54"/>
+                                                        <state key="normal" image="if@_sheet_keyboard_p_symbol_12" backgroundImage="if@_sheet_keyboard_p_key_01_n"/>
+                                                        <state key="selected" backgroundImage="if@_sheet_keyboard_p_key_01_p"/>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_01_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hk-29-puD">
+                                                        <rect key="frame" x="53.5" y="0.0" width="53.5" height="54"/>
+                                                        <state key="normal" image="if@_sheet_keyboard_p_symbol_13" backgroundImage="if@_sheet_keyboard_p_key_01_n"/>
+                                                        <state key="selected" image="if@_sheet_keyboard_p_function_01" backgroundImage="if@_sheet_keyboard_p_key_01_p"/>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_01_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DX4-dE-XZo">
+                                                        <rect key="frame" x="107" y="0.0" width="53.5" height="54"/>
+                                                        <state key="normal" image="if@_sheet_keyboard_p_symbol_14" backgroundImage="if@_sheet_keyboard_p_key_01_n"/>
+                                                        <state key="selected" backgroundImage="if@_sheet_keyboard_p_key_01_p"/>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_01_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxw-tB-1DH">
+                                                        <rect key="frame" x="160.5" y="0.0" width="54" height="54"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <state key="normal" title="7" backgroundImage="if@_sheet_keyboard_p_key_02_n">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_02_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV8-Wg-rCl">
+                                                        <rect key="frame" x="214.5" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <state key="normal" title="8" backgroundImage="if@_sheet_keyboard_p_key_02_n">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_02_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wut-Kc-9rq">
+                                                        <rect key="frame" x="268" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <state key="normal" title="9" backgroundImage="if@_sheet_keyboard_p_key_02_n">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_02_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUW-5U-I38">
+                                                        <rect key="frame" x="321.5" y="0.0" width="53.5" height="54"/>
+                                                        <state key="normal" image="if@_sheet_keyboard_p_function_03" backgroundImage="if@_sheet_keyboard_p_key_04_n"/>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_04_p"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KWf-t5-NgT">
+                                                <rect key="frame" x="0.0" y="54" width="375" height="54"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bU-pk-62M">
+                                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="54"/>
+                                                        <state key="normal" image="if@_sheet_keyboard_p_symbol_15" backgroundImage="if@_sheet_keyboard_p_key_01_n"/>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_01_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0YT-xt-sc7">
+                                                        <rect key="frame" x="53.5" y="0.0" width="53.5" height="54"/>
+                                                        <state key="normal" image="if@_sheet_keyboard_p_symbol_16" backgroundImage="if@_sheet_keyboard_p_key_01_n"/>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_01_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKc-rJ-zZw">
+                                                        <rect key="frame" x="107" y="0.0" width="53.5" height="54"/>
+                                                        <state key="normal" image="if@_sheet_keyboard_p_symbol_17" backgroundImage="if@_sheet_keyboard_p_key_01_n"/>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_01_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbG-Y4-sZX">
+                                                        <rect key="frame" x="160.5" y="0.0" width="54" height="54"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <state key="normal" title="4" backgroundImage="if@_sheet_keyboard_p_key_02_n">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_02_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWM-up-ccS">
+                                                        <rect key="frame" x="214.5" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <state key="normal" title="5" backgroundImage="if@_sheet_keyboard_p_key_02_n">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_02_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2u-f8-Buk">
+                                                        <rect key="frame" x="268" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <state key="normal" title="6" backgroundImage="if@_sheet_keyboard_p_key_02_n">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_02_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLY-lh-YcK">
+                                                        <rect key="frame" x="321.5" y="0.0" width="53.5" height="54"/>
+                                                        <state key="normal" image="if@_sheet_keyboard_p_function_04" backgroundImage="if@_sheet_keyboard_p_key_04_n"/>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_04_p"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2oh-Kt-HbQ">
+                                                <rect key="frame" x="0.0" y="108" width="375" height="54"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTb-by-O8G">
+                                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="54"/>
+                                                        <state key="normal" image="if@_sheet_keyboard_p_symbol_18" backgroundImage="if@_sheet_keyboard_p_key_01_n"/>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_01_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ps-rA-fki">
+                                                        <rect key="frame" x="53.5" y="0.0" width="53.5" height="54"/>
+                                                        <state key="normal" image="if@_sheet_keyboard_p_symbol_19" backgroundImage="if@_sheet_keyboard_p_key_01_n"/>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_01_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ls-1y-91N">
+                                                        <rect key="frame" x="107" y="0.0" width="53.5" height="54"/>
+                                                        <state key="normal" image="if@_sheet_keyboard_p_symbol_20" backgroundImage="if@_sheet_keyboard_p_key_01_n"/>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_01_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55D-QS-ZGq">
+                                                        <rect key="frame" x="160.5" y="0.0" width="54" height="54"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <state key="normal" title="1" backgroundImage="if@_sheet_keyboard_p_key_02_n">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_02_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c89-LB-AYB">
+                                                        <rect key="frame" x="214.5" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <state key="normal" title="2" backgroundImage="if@_sheet_keyboard_p_key_02_n">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_02_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wb-sb-xwl">
+                                                        <rect key="frame" x="268" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <state key="normal" title="3" backgroundImage="if@_sheet_keyboard_p_key_02_n">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_02_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLL-mq-sc0">
+                                                        <rect key="frame" x="321.5" y="0.0" width="53.5" height="54"/>
+                                                        <state key="normal" image="if@_sheet_keyboard_p_function_01" backgroundImage="if@_sheet_keyboard_p_key_04_n"/>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_04_p"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIc-Zb-YrX">
+                                                <rect key="frame" x="0.0" y="162" width="375" height="54"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wq8-CK-rY2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="54"/>
+                                                        <state key="normal" image="if@_sheet_keyboard_p_symbol_21" backgroundImage="if@_sheet_keyboard_p_key_01_n"/>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_01_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVv-yg-dSa">
+                                                        <rect key="frame" x="107" y="0.0" width="53.5" height="54"/>
+                                                        <state key="normal" image="if@_sheet_keyboard_p_symbol_10" backgroundImage="if@_sheet_keyboard_p_key_01_n"/>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_01_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rg-Kv-RuN">
+                                                        <rect key="frame" x="160.5" y="0.0" width="54" height="54"/>
+                                                        <state key="normal" image="if@_sheet_keyboard_p_symbol_10" backgroundImage="if@_sheet_keyboard_p_key_01_n"/>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_01_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIy-f6-ggP">
+                                                        <rect key="frame" x="214.5" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <state key="normal" title="0" backgroundImage="if@_sheet_keyboard_p_key_02_n">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_02_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9z-Y6-Nbb">
+                                                        <rect key="frame" x="268" y="0.0" width="53.5" height="54"/>
+                                                        <state key="normal" image="if@_sheet_keyboard_p_symbol_11" backgroundImage="if@_sheet_keyboard_p_key_01_n"/>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_01_p"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vua-fS-4i0">
+                                                        <rect key="frame" x="321.5" y="0.0" width="53.5" height="54"/>
+                                                        <state key="normal" image="if@_sheet_keyboard_p_function_02" backgroundImage="if@_sheet_keyboard_p_key_04_n"/>
+                                                        <state key="highlighted" backgroundImage="if@_sheet_keyboard_p_key_04_p"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="i9z-Y6-Nbb" firstAttribute="leading" secondItem="5wb-sb-xwl" secondAttribute="leading" id="8Pq-uO-jtB"/>
+                                            <constraint firstItem="GIy-f6-ggP" firstAttribute="leading" secondItem="c89-LB-AYB" secondAttribute="leading" id="Co7-0F-ekt"/>
+                                            <constraint firstItem="4rg-Kv-RuN" firstAttribute="leading" secondItem="55D-QS-ZGq" secondAttribute="leading" id="EKq-aH-Swm"/>
+                                            <constraint firstItem="i9z-Y6-Nbb" firstAttribute="trailing" secondItem="5wb-sb-xwl" secondAttribute="trailing" id="HgA-i3-2xx"/>
+                                            <constraint firstItem="IVv-yg-dSa" firstAttribute="trailing" secondItem="4ls-1y-91N" secondAttribute="trailing" id="Hhg-0n-TRv"/>
+                                            <constraint firstItem="GIy-f6-ggP" firstAttribute="trailing" secondItem="c89-LB-AYB" secondAttribute="trailing" id="Jkx-Nr-I9l"/>
+                                            <constraint firstItem="Wq8-CK-rY2" firstAttribute="trailing" secondItem="4Ps-rA-fki" secondAttribute="trailing" id="Kf9-wm-UNU"/>
+                                            <constraint firstItem="Vua-fS-4i0" firstAttribute="leading" secondItem="ZLL-mq-sc0" secondAttribute="leading" id="MAv-wi-B3K"/>
+                                            <constraint firstItem="4rg-Kv-RuN" firstAttribute="trailing" secondItem="55D-QS-ZGq" secondAttribute="trailing" id="MIH-1E-n4l"/>
+                                            <constraint firstItem="IVv-yg-dSa" firstAttribute="leading" secondItem="4ls-1y-91N" secondAttribute="leading" id="keY-i3-X5J"/>
+                                            <constraint firstItem="Wq8-CK-rY2" firstAttribute="leading" secondItem="tTb-by-O8G" secondAttribute="leading" id="o5T-bg-Zv9"/>
+                                            <constraint firstItem="Vua-fS-4i0" firstAttribute="trailing" secondItem="ZLL-mq-sc0" secondAttribute="trailing" id="uRh-6F-Eyh"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="BNL-l4-qrF" secondAttribute="bottom" id="BjF-Xd-fGA"/>
+                                    <constraint firstAttribute="trailing" secondItem="BNL-l4-qrF" secondAttribute="trailing" id="Dpw-oT-dlv"/>
+                                    <constraint firstItem="BNL-l4-qrF" firstAttribute="leading" secondItem="pkM-c3-zMl" secondAttribute="leading" id="Pau-am-uQi"/>
+                                    <constraint firstItem="BNL-l4-qrF" firstAttribute="top" secondItem="pkM-c3-zMl" secondAttribute="top" id="VvC-oW-mth"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pkM-c3-zMl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IDD-p2-p1K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pkM-c3-zMl" secondAttribute="trailing" id="KZR-ob-Ruy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pkM-c3-zMl" secondAttribute="bottom" id="lXT-NM-eVt"/>
+                            <constraint firstItem="pkM-c3-zMl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pUm-RX-PYO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="216"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="if@_sheet_keyboard_p_function_01" width="40" height="30"/>
+        <image name="if@_sheet_keyboard_p_function_02" width="40" height="30"/>
+        <image name="if@_sheet_keyboard_p_function_03" width="40" height="30"/>
+        <image name="if@_sheet_keyboard_p_function_04" width="40" height="30"/>
+        <image name="if@_sheet_keyboard_p_key_01_n" width="22" height="40"/>
+        <image name="if@_sheet_keyboard_p_key_01_p" width="22" height="40"/>
+        <image name="if@_sheet_keyboard_p_key_02_n" width="22" height="40"/>
+        <image name="if@_sheet_keyboard_p_key_02_p" width="22" height="40"/>
+        <image name="if@_sheet_keyboard_p_key_04_n" width="22" height="40"/>
+        <image name="if@_sheet_keyboard_p_key_04_p" width="22" height="40"/>
+        <image name="if@_sheet_keyboard_p_symbol_10" width="40" height="30"/>
+        <image name="if@_sheet_keyboard_p_symbol_11" width="40" height="30"/>
+        <image name="if@_sheet_keyboard_p_symbol_12" width="40" height="30"/>
+        <image name="if@_sheet_keyboard_p_symbol_13" width="40" height="30"/>
+        <image name="if@_sheet_keyboard_p_symbol_14" width="40" height="30"/>
+        <image name="if@_sheet_keyboard_p_symbol_15" width="40" height="30"/>
+        <image name="if@_sheet_keyboard_p_symbol_16" width="40" height="30"/>
+        <image name="if@_sheet_keyboard_p_symbol_17" width="40" height="30"/>
+        <image name="if@_sheet_keyboard_p_symbol_18" width="40" height="30"/>
+        <image name="if@_sheet_keyboard_p_symbol_19" width="40" height="30"/>
+        <image name="if@_sheet_keyboard_p_symbol_20" width="40" height="30"/>
+        <image name="if@_sheet_keyboard_p_symbol_21" width="72" height="30"/>
+    </resources>
+</document>
