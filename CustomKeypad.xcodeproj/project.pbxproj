@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAD46C8122D47A4500898432 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD46C8022D47A4500898432 /* AppDelegate.m */; };
+		BAD46C8422D47A4500898432 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD46C8322D47A4500898432 /* ViewController.m */; };
+		BAD46C8722D47A4500898432 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD46C8522D47A4500898432 /* Main.storyboard */; };
+		BAD46C8922D47A4500898432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD46C8822D47A4500898432 /* Assets.xcassets */; };
+		BAD46C8C22D47A4500898432 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD46C8A22D47A4500898432 /* LaunchScreen.storyboard */; };
+		BAD46C8F22D47A4500898432 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD46C8E22D47A4500898432 /* main.m */; };
+		BAD46C9922D47A4500898432 /* CustomKeypadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD46C9822D47A4500898432 /* CustomKeypadTests.m */; };
+		BAD46CA422D47A4500898432 /* CustomKeypadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD46CA322D47A4500898432 /* CustomKeypadUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAD46C9522D47A4500898432 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAD46C7422D47A4500898432 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAD46C7B22D47A4500898432;
+			remoteInfo = CustomKeypad;
+		};
+		BAD46CA022D47A4500898432 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAD46C7422D47A4500898432 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAD46C7B22D47A4500898432;
+			remoteInfo = CustomKeypad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BAD46C7C22D47A4500898432 /* CustomKeypad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomKeypad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD46C7F22D47A4500898432 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BAD46C8022D47A4500898432 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BAD46C8222D47A4500898432 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BAD46C8322D47A4500898432 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BAD46C8622D47A4500898432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAD46C8822D47A4500898432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAD46C8B22D47A4500898432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAD46C8D22D47A4500898432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD46C8E22D47A4500898432 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BAD46C9422D47A4500898432 /* CustomKeypadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomKeypadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD46C9822D47A4500898432 /* CustomKeypadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomKeypadTests.m; sourceTree = "<group>"; };
+		BAD46C9A22D47A4500898432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD46C9F22D47A4500898432 /* CustomKeypadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomKeypadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD46CA322D47A4500898432 /* CustomKeypadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomKeypadUITests.m; sourceTree = "<group>"; };
+		BAD46CA522D47A4500898432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAD46C7922D47A4500898432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD46C9122D47A4500898432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD46C9C22D47A4500898432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAD46C7322D47A4500898432 = {
+			isa = PBXGroup;
+			children = (
+				BAD46C7E22D47A4500898432 /* CustomKeypad */,
+				BAD46C9722D47A4500898432 /* CustomKeypadTests */,
+				BAD46CA222D47A4500898432 /* CustomKeypadUITests */,
+				BAD46C7D22D47A4500898432 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAD46C7D22D47A4500898432 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAD46C7C22D47A4500898432 /* CustomKeypad.app */,
+				BAD46C9422D47A4500898432 /* CustomKeypadTests.xctest */,
+				BAD46C9F22D47A4500898432 /* CustomKeypadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAD46C7E22D47A4500898432 /* CustomKeypad */ = {
+			isa = PBXGroup;
+			children = (
+				BAD46C7F22D47A4500898432 /* AppDelegate.h */,
+				BAD46C8022D47A4500898432 /* AppDelegate.m */,
+				BAD46C8222D47A4500898432 /* ViewController.h */,
+				BAD46C8322D47A4500898432 /* ViewController.m */,
+				BAD46C8522D47A4500898432 /* Main.storyboard */,
+				BAD46C8822D47A4500898432 /* Assets.xcassets */,
+				BAD46C8A22D47A4500898432 /* LaunchScreen.storyboard */,
+				BAD46C8D22D47A4500898432 /* Info.plist */,
+				BAD46C8E22D47A4500898432 /* main.m */,
+			);
+			path = CustomKeypad;
+			sourceTree = "<group>";
+		};
+		BAD46C9722D47A4500898432 /* CustomKeypadTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAD46C9822D47A4500898432 /* CustomKeypadTests.m */,
+				BAD46C9A22D47A4500898432 /* Info.plist */,
+			);
+			path = CustomKeypadTests;
+			sourceTree = "<group>";
+		};
+		BAD46CA222D47A4500898432 /* CustomKeypadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BAD46CA322D47A4500898432 /* CustomKeypadUITests.m */,
+				BAD46CA522D47A4500898432 /* Info.plist */,
+			);
+			path = CustomKeypadUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAD46C7B22D47A4500898432 /* CustomKeypad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAD46CA822D47A4500898432 /* Build configuration list for PBXNativeTarget "CustomKeypad" */;
+			buildPhases = (
+				BAD46C7822D47A4500898432 /* Sources */,
+				BAD46C7922D47A4500898432 /* Frameworks */,
+				BAD46C7A22D47A4500898432 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomKeypad;
+			productName = CustomKeypad;
+			productReference = BAD46C7C22D47A4500898432 /* CustomKeypad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAD46C9322D47A4500898432 /* CustomKeypadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAD46CAB22D47A4500898432 /* Build configuration list for PBXNativeTarget "CustomKeypadTests" */;
+			buildPhases = (
+				BAD46C9022D47A4500898432 /* Sources */,
+				BAD46C9122D47A4500898432 /* Frameworks */,
+				BAD46C9222D47A4500898432 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAD46C9622D47A4500898432 /* PBXTargetDependency */,
+			);
+			name = CustomKeypadTests;
+			productName = CustomKeypadTests;
+			productReference = BAD46C9422D47A4500898432 /* CustomKeypadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BAD46C9E22D47A4500898432 /* CustomKeypadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAD46CAE22D47A4500898432 /* Build configuration list for PBXNativeTarget "CustomKeypadUITests" */;
+			buildPhases = (
+				BAD46C9B22D47A4500898432 /* Sources */,
+				BAD46C9C22D47A4500898432 /* Frameworks */,
+				BAD46C9D22D47A4500898432 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAD46CA122D47A4500898432 /* PBXTargetDependency */,
+			);
+			name = CustomKeypadUITests;
+			productName = CustomKeypadUITests;
+			productReference = BAD46C9F22D47A4500898432 /* CustomKeypadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAD46C7422D47A4500898432 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Byunsangjin;
+				TargetAttributes = {
+					BAD46C7B22D47A4500898432 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					BAD46C9322D47A4500898432 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BAD46C7B22D47A4500898432;
+					};
+					BAD46C9E22D47A4500898432 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BAD46C7B22D47A4500898432;
+					};
+				};
+			};
+			buildConfigurationList = BAD46C7722D47A4500898432 /* Build configuration list for PBXProject "CustomKeypad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAD46C7322D47A4500898432;
+			productRefGroup = BAD46C7D22D47A4500898432 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAD46C7B22D47A4500898432 /* CustomKeypad */,
+				BAD46C9322D47A4500898432 /* CustomKeypadTests */,
+				BAD46C9E22D47A4500898432 /* CustomKeypadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAD46C7A22D47A4500898432 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD46C8C22D47A4500898432 /* LaunchScreen.storyboard in Resources */,
+				BAD46C8922D47A4500898432 /* Assets.xcassets in Resources */,
+				BAD46C8722D47A4500898432 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD46C9222D47A4500898432 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD46C9D22D47A4500898432 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAD46C7822D47A4500898432 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD46C8422D47A4500898432 /* ViewController.m in Sources */,
+				BAD46C8F22D47A4500898432 /* main.m in Sources */,
+				BAD46C8122D47A4500898432 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD46C9022D47A4500898432 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD46C9922D47A4500898432 /* CustomKeypadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD46C9B22D47A4500898432 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD46CA422D47A4500898432 /* CustomKeypadUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAD46C9622D47A4500898432 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAD46C7B22D47A4500898432 /* CustomKeypad */;
+			targetProxy = BAD46C9522D47A4500898432 /* PBXContainerItemProxy */;
+		};
+		BAD46CA122D47A4500898432 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAD46C7B22D47A4500898432 /* CustomKeypad */;
+			targetProxy = BAD46CA022D47A4500898432 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAD46C8522D47A4500898432 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAD46C8622D47A4500898432 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAD46C8A22D47A4500898432 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAD46C8B22D47A4500898432 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAD46CA622D47A4500898432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BAD46CA722D47A4500898432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAD46CA922D47A4500898432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN3PLAKW34;
+				INFOPLIST_FILE = CustomKeypad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dave.s.byun.CustomKeypad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAD46CAA22D47A4500898432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN3PLAKW34;
+				INFOPLIST_FILE = CustomKeypad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dave.s.byun.CustomKeypad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BAD46CAC22D47A4500898432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN3PLAKW34;
+				INFOPLIST_FILE = CustomKeypadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dave.s.byun.CustomKeypadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomKeypad.app/CustomKeypad";
+			};
+			name = Debug;
+		};
+		BAD46CAD22D47A4500898432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN3PLAKW34;
+				INFOPLIST_FILE = CustomKeypadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dave.s.byun.CustomKeypadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomKeypad.app/CustomKeypad";
+			};
+			name = Release;
+		};
+		BAD46CAF22D47A4500898432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN3PLAKW34;
+				INFOPLIST_FILE = CustomKeypadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dave.s.byun.CustomKeypadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CustomKeypad;
+			};
+			name = Debug;
+		};
+		BAD46CB022D47A4500898432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN3PLAKW34;
+				INFOPLIST_FILE = CustomKeypadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dave.s.byun.CustomKeypadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CustomKeypad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAD46C7722D47A4500898432 /* Build configuration list for PBXProject "CustomKeypad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAD46CA622D47A4500898432 /* Debug */,
+				BAD46CA722D47A4500898432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAD46CA822D47A4500898432 /* Build configuration list for PBXNativeTarget "CustomKeypad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAD46CA922D47A4500898432 /* Debug */,
+				BAD46CAA22D47A4500898432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAD46CAB22D47A4500898432 /* Build configuration list for PBXNativeTarget "CustomKeypadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAD46CAC22D47A4500898432 /* Debug */,
+				BAD46CAD22D47A4500898432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAD46CAE22D47A4500898432 /* Build configuration list for PBXNativeTarget "CustomKeypadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAD46CAF22D47A4500898432 /* Debug */,
+				BAD46CB022D47A4500898432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAD46C7422D47A4500898432 /* Project object */;
+}
